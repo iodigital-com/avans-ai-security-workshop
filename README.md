@@ -12,6 +12,6 @@
 
 1. Open a `.ipynb` file in a compatible editor like VS Code.
 
-2. Run VS Code command `Notebook: Select Notebook Kernel` and select the kernel located at `./analysis/.venv/bin/python`.
+2. Run VS Code command `Notebook: Select Notebook Kernel` and select the kernel located at `.venv/bin/python`.
 
 3. Run all cells to see all results, or selectively run the cells you want.
