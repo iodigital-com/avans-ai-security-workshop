@@ -8,10 +8,10 @@
 
 4. Make a copy of the `.env.example` file, name it `.env` and fill in the missing values (ask another developer)
 
-## Development
+## Running the Workshop
 
 1. Open a `.ipynb` file in a compatible editor like VS Code.
 
 2. Run VS Code command `Notebook: Select Notebook Kernel` and select the kernel located at `.venv/bin/python`.
 
-3. Run all cells to see all results, or selectively run the cells you want.
+3. Run cells one-by-one to see results.
