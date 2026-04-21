@@ -1,3 +1,9 @@
+"""
+Simple coding agent implementation that uses an LLM to call tools in a loop.
+
+For the workshop, it is NOT NECESSARY TO MODIFY THIS FILE, but feel free to look around.
+"""
+
 import json
 import os
 import subprocess
