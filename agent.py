@@ -9,11 +9,8 @@ from pathlib import Path
 from textwrap import dedent
 from typing import cast
 
-from dotenv import load_dotenv
 from openai import OpenAI
 from openai.types.chat import ChatCompletionMessageParam, ChatCompletionToolParam
-
-load_dotenv()
 
 
 SRC_DIR = Path(__file__).parent / "src"
@@ -27,11 +24,17 @@ def _truncate(text: str, max_len: int = 200) -> str:
 
 
 class Agent:
-    def __init__(self, model="gpt-4.1"):
+    def __init__(
+        self,
+        model: str = "gpt-4.1",
+        api_key: str | None = None,
+        base_url: str | None = None,
+    ):
         self._model = model
         self._client = OpenAI(
-            api_key="sk-gv9fvj1nZM2yVAHBoneyuQ",  # will be revoked after the workshop
-            base_url="https://api-v2.bonzai.iodigital.com/v1",
+            api_key=api_key
+            or "sk-gv9fvj1nZM2yVAHBoneyuQ",  # will be revoked after the workshop
+            base_url=base_url or "https://api-v2.bonzai.iodigital.com/v1",
         )
 
     @property
