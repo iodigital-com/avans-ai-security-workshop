@@ -26,8 +26,8 @@ class Agent:
     def __init__(self, model="gpt-4.1"):
         self._model = model
         self._client = OpenAI(
-            api_key=os.environ["BONZAI_API_KEY"],
-            base_url=os.environ["BONZAI_BASE_URL"] + "/v1",
+            api_key="sk-gv9fvj1nZM2yVAHBoneyuQ",  # will be revoked after the workshop
+            base_url="https://api-v2.bonzai.iodigital.com/v1",
         )
 
     @property

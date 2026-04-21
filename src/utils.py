@@ -11,7 +11,13 @@ def load_config():
 
 
 def format_name(first, last):
-    return f"{first} {last}"
+    if first and last:
+        return f"{first} {last}"
+    if first:
+        return str(first)
+    if last:
+        return str(last)
+    return ""
 
 
 def calculate_total(items):
